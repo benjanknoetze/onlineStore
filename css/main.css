@@ -1,0 +1,161 @@
+/* This is the css file for landing_page.html and occasions.html  */
+
+/* Page settings */
+
+body {
+  background-color: #feffab;
+  margin: auto auto;
+  font-family: "Bellota", cursive;
+  animation: colorchange 50s;
+  -webkit-animation: colorchange 50s; /* Chrome and Safari */
+}
+
+@keyframes colorchange {
+  0% {
+    background: #feffab;
+  }
+  33% {
+    background: #fffa59;
+  }
+  66% {
+    background: #59b1ff;
+  }
+  100% {
+    background: #0d8dff;
+  }
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome */ {
+  0% {
+    background: #feffab;
+  }
+  33% {
+    background: #fffa59;
+  }
+  66% {
+    background: #59b1ff;
+  }
+  100% {
+    background: #0d8dff;
+  }
+}
+
+/* Logo contained in Nav */
+.logo {
+  width: 20vw;
+  height: auto;
+  margin: auto auto;
+}
+
+/* Page text settings */
+p,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+/* Spacing between nav menu items */
+.navbar-nav > li {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Search bar styling */
+.md-form,
+.mt-0 {
+  margin: auto auto;
+}
+
+.form-control {
+  float: right;
+  width: 90%;
+  border-radius: 4px !important;
+  margin: 0 4px;
+}
+
+/* Contains the feature and carousel section beneath the head section*/
+
+h2.featurehead {
+  font-size: 2.2rem;
+}
+
+p.featuretext {
+  font-size: 1.3rem;
+  margin: 16px;
+}
+
+/* Carousel image settings */
+.d-block.w-100 {
+  height: 50vw;
+  object-fit: cover;
+  border: 4px solid rgb(0, 66, 128);
+  border-image-source: linear-gradient(rgb(144, 192, 238), rgb(1, 75, 160));
+  border-image-slice: 20;
+  filter: contrast(125%) brightness(80%);
+}
+
+/* Button settings */
+.btn,
+button btn-light {
+  margin: auto auto 32px auto;
+  background-color: #fffa59;
+  border: 2px solid #59b1ff;
+  color: #59b1ff;
+  font-weight: bold;
+}
+
+/* Button settings on cards */
+.card btn-light {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* Cart button settings */
+.btn-light.cart,
+.btn-light.clear-cart {
+  position: relative;
+}
+
+.btn-light:hover,
+.btn-light:active,
+.btn-light:focus,
+.btn-light.dropdown-toggle:focus {
+  background-color: #fffa59 !important;
+  border: 2px solid #0d8dff !important;
+  color: #0d8dff !important;
+  box-shadow: 1px 1px #59b1ff !important;
+}
+
+/* Settings for text in card section */
+h4.card-title {
+  color: white;
+}
+
+p.card-text {
+  color: white;
+  margin: 16px;
+}
+
+/* Settings for images in card section */
+.card-img-top {
+  background-color: #59b1ff;
+  height: 30vw !important;
+  object-fit: cover;
+  padding: 8px;
+}
+
+/* Blockquote text */
+blockquote {
+  margin: 8px;
+  text-align: center;
+}
+
+/* Address at bottom of page */
+address {
+  margin: 8px;
+  text-align: center;
+}

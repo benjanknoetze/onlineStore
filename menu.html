@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google Font -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Bellota&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <title>Yum Yum!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Nav -->
+
+          <nav
+            class="navbar navbar-expand-lg navbar-light"
+            style="background-color: #feffab;"
+          >
+            <a class="navbar-brand" href="landing_page.html"
+              ><img src="pics/Yumma.png" class="logo" alt="Yumma"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="landing_page.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="menu.html"
+                    >Menu<span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+
+                <!-- Search form -->
+
+                <div
+                  class="md-form active-cyan-2 mb-3"
+                  style="align-content: left;"
+                >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Page title/Feature section -->
+
+        <div class="col-md-12">
+          <!-- Cart Buttons -->
+          <div class="mt-3 buttonSection">
+            <button
+              type="button"
+              class="btn btn-light cart"
+              data-toggle="modal"
+              data-target="#cart"
+            >
+              Cart (<span class="total-count"></span>)
+            </button>
+            <button class="btn btn-light clear-cart">Clear Cart</button>
+          </div>
+          <h2 class="featurehead">
+            Yummy yummy yummy, <br />
+            I've got cake in my tummy!
+          </h2>
+          <p class="featuretext">
+            Stuff yourself with these yummies.<br />Here's what's on offer this
+            season.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Section contains 6 cards -->
+
+        <div class="col-md-4">
+          <div class="card">
+            <a
+              href="javascript:void();"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Click me"
+            >
+              <div class="imgBx">
+                <img src="pics/choc.jpg" alt="card1" />
+              </div>
+              <div class="details">
+                <h2>Classic Choccy<br /><span>So much choc</span></h2>
+              </div>
+            </a>
+          </div>
+          <div class="text-center">
+            <button
+              href="#"
+              data-name="Classic_Choccy"
+              data-price="15"
+              class="btn btn-light add"
+            >
+              Eat me
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a
+              href="javascript:void();"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Click me"
+            >
+              <div class="imgBx">
+                <img src="pics/lemon.jpg" alt="card2" />
+              </div>
+              <div class="details">
+                <h2>Zesty Lemon<br /><span>So much zest</span></h2>
+              </div>
+            </a>
+          </div>
+          <div class="text-center">
+            <button
+              href="#"
+              data-name="Zesty_Lemon"
+              data-price="15"
+              class="btn btn-light add"
+            >
+              Eat me
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a
+              href="javascript:void();"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Click me"
+            >
+              <div class="imgBx">
+                <img src="pics/coffee.jpg" alt="images" />
+              </div>
+              <div class="details">
+                <h2>Cuppa Coffee<br /><span>So much pick-me-up</span></h2>
+              </div>
+            </a>
+          </div>
+          <div class="text-center">
+            <button
+              href="#"
+              data-name="Cuppa_Coffee"
+              data-price="15"
+              class="btn btn-light add"
+            >
+              Eat me
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <a
+              href="javascript:void();"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Click me"
+            >
+              <div class="imgBx">
+                <img src="pics/carrot.jpg" alt="images" />
+              </div>
+              <div class="details">
+                <h2>Classy Carrot<br /><span>So much class</span></h2>
+              </div>
+            </a>
+          </div>
+          <div class="text-center">
+            <button
+              href="#"
+              data-name="Classy_Carrot"
+              data-price="15"
+              class="btn btn-light add"
+            >
+              Eat me
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a
+              href="javascript:void();"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Click me"
+            >
+              <div class="imgBx">
+                <img src="pics/cheese.jpg" alt="images" />
+              </div>
+              <div class="details">
+                <h2>Cheeky Cheese<br /><span>So much cheek</span></h2>
+              </div>
+            </a>
+          </div>
+          <div class="text-center">
+            <button
+              href="#"
+              data-name="Cheeky_Cheese"
+              data-price="15"
+              class="btn btn-light add"
+            >
+              Eat me
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a
+              href="javascript:void();"
+              data-toggle="tooltip"
+              data-placement="right"
+              class="tooltip-menu"
+              title="Click me"
+            >
+              <div class="imgBx">
+                <img src="pics/funfetti.jpg" alt="images" />
+              </div>
+              <div class="details">
+                <h2>FUN Funfetti<br /><span>So much fun</span></h2>
+              </div>
+            </a>
+          </div>
+          <div class="text-center">
+            <button
+              href="#"
+              data-name="FUN_Funfetti"
+              data-price="15"
+              class="btn btn-light add"
+            >
+              Eat me
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote section -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <blockquote class="blockquote">
+            <p class="mb-0">
+              One cannot think well, love well, sleep well, if one has not dined
+              well.
+            </p>
+
+            <footer class="blockquote-footer">
+              Virginia Woolf <cite>A Room of One's Own</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Address section -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <address>
+            <strong>Yumma Cakes</strong><br />
+            128 Venlor Avenue<br />Eastleigh, Johannesburg, 1609<br />
+            (011) 290 3697
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content" style="background-color: #feffab;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Total price: R<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-dismiss="modal">
+              Close
+            </button>
+            <a href="cart.html" class="btn btn-light">Order now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- For tooltip displayed with cupcake cards -->
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+    <!-- Scripts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

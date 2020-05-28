@@ -1,0 +1,218 @@
+/* This is the css file for contact.html & cart.html */
+
+/* Page settings */
+body {
+  margin: auto auto;
+  font-family: "Bellota", cursive;
+  animation: colorchange 50s;
+  -webkit-animation: colorchange 50s; /* Chrome and Safari */
+}
+
+@keyframes colorchange {
+  0% {
+    background: #feffab;
+  }
+  33% {
+    background: #fffa59;
+  }
+  66% {
+    background: #59b1ff;
+  }
+  100% {
+    background: #0d8dff;
+  }
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome */ {
+  0% {
+    background: #feffab;
+  }
+  33% {
+    background: #fffa59;
+  }
+  66% {
+    background: #59b1ff;
+  }
+  100% {
+    background: #0d8dff;
+  }
+}
+
+/* Logo contained in Nav */
+.logo {
+  width: 20vw;
+  height: auto;
+  margin: auto auto;
+}
+
+/* Page text settings */
+p,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+/* Spacing between nav menu items */
+.navbar-nav > li {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Search bar styling */
+/* Vertical aligns search bar in Head grid */
+.md-form,
+.mt-0 {
+  margin: auto auto;
+}
+
+/* Search bar, modal box */
+.form-control {
+  width: 90%;
+  border-radius: 4px !important;
+  margin: 0 4px;
+}
+
+/* Select shipping method and coupon */
+#selectValue {
+  width: 50%;
+  border-radius: 4px !important;
+  margin: auto;
+}
+
+/* Contains the feature and carousel section beneath the head section*/
+h2.featurehead {
+  font-size: 2.2rem;
+}
+
+p.featuretext {
+  font-size: 1.3rem;
+  margin: 16px;
+}
+
+/* Button settings */
+.btn-light {
+  margin: auto auto 32px auto;
+  background-color: #fffa59;
+  border: 2px solid #59b1ff;
+  color: #59b1ff;
+  font-weight: bold;
+}
+
+/* Apply coupon button */
+.apply,
+input {
+  border-radius: 4px;
+}
+
+/* Cart button settings */
+.btn-light.cart {
+  position: relative;
+}
+
+.btn-light:hover,
+.btn-light:active,
+.btn-light:focus,
+.btn-light.dropdown-toggle:focus {
+  background-color: #fffa59 !important;
+  border: 2px solid #0d8dff !important;
+  color: #0d8dff !important;
+  box-shadow: 1px 1px #59b1ff !important;
+}
+
+/* Coupon apply messages */
+#message {
+  position: relative;
+  top: 10px;
+  color: rgb(1, 80, 1);
+}
+#err {
+  position: relative;
+  top: 10px;
+  color: rgb(151, 5, 5);
+}
+
+/* For Google Maps */
+iframe {
+  margin-bottom: 24px;
+}
+
+/* Contact form */
+.contact100-form-title {
+  display: block;
+  width: 100%;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 13px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.contact100-form-range-value {
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.noUi-connect {
+  background-color: #77a7ff;
+}
+
+.rs1-wrap-input100 {
+  width: calc((100% - 30px) / 2);
+}
+
+.label-input100 {
+  font-size: 10px;
+  color: #202020;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding-right: 15px;
+}
+
+input.input100 {
+  height: 40px;
+}
+
+textarea.input100 {
+  min-height: 120px;
+  padding-top: 9px;
+  padding-bottom: 13px;
+}
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+/* Blockquote text */
+blockquote {
+  margin: 8px;
+  text-align: center;
+}
+
+/* Address at bottom of page */
+address {
+  margin: 8px;
+  text-align: center;
+}
